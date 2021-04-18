@@ -1,0 +1,15 @@
+User:
+  
+#1 logs_of_day (每天的 log)
+
+#2 start_time_of_day (每天最早的 log 時間)
+  
+#3 end_time_of_day (每天最晚的 log 時間)
+
+#4 total_days (總天數)
+  
+#5 total_logs (總 log 數)
+  
+#6 avg_log_of_day (平均一天有幾筆 log )
+
+  
