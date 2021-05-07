@@ -1,2 +1,1 @@
-
-get naming rules to find missing file
+get naming rules to find missing file.
