@@ -1,1 +1,1 @@
-csv data translate to dict date and analysize ideal resault.
+csv data translate to dict data and analysize ideal resault.
