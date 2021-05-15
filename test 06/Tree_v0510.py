@@ -115,8 +115,9 @@ def make_tree_layer(query_tree_layer, trunk_height):
 	return tree_Grp
 
 
-def create_tree(*args):
+def create_tree(tree_layer, trunk_height, *args):
 
+	#check to see if model exists
 	if cmds.objExists('Tree_main'):
 	    cmds.delete('Tree_main')
 			
@@ -148,8 +149,7 @@ tree_layer = cmds.intSliderGrp(field=True, label='Tree layer  ', minValue=1, max
 trunk_height = cmds.intSliderGrp(field=True, label='Trunk height  ', minValue=1, maxValue=10, value=7)
 	
 # set create_tree button and connect create_tree()
-create_tree_cmd = partial(create_tree, tree_layer, trunk_height)
-cmds.button(label='Create Tree', command=create_tree_cmd)
+cmds.button(label='Create Tree', command=partial(create_tree, tree_layer, trunk_height))
 							 
 # display window
 cmds.showWindow(create_tree_window)
