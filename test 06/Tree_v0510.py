@@ -1,6 +1,49 @@
 import maya.cmds as cmds
 from functools import partial
 
+
+def UI():
+	
+	# create window
+	create_tree_window = cmds.window('Create Tree', widthHeight=(400, 160))
+				
+	# deesign title / button position
+	cmds.columnLayout(adjustableColumn=True)
+	cmds.separator(height=20, width=100)
+	cmds.text('Create Tree')
+	cmds.separator(height=20, width=100)
+		
+	# set tree_layer slider 
+	tree_layer = cmds.intSliderGrp(field=True, label='Tree layer  ', minValue=1, maxValue=10, value=3)
+		
+	# set trunk_height slider 
+	trunk_height = cmds.intSliderGrp(field=True, label='Trunk height  ', minValue=1, maxValue=10, value=7)
+	
+	# set create_tree button and connect create_tree()
+	cmds.button(label='Create Tree', command=partial(create_tree, tree_layer, trunk_height))
+								 
+	# display window
+	cmds.showWindow(create_tree_window)
+
+
+def create_tree(tree_layer, trunk_height, *args):
+	
+	#check to see if model exists
+	if cmds.objExists('Tree_main'):
+	    cmds.delete('Tree_main')
+			
+	# 0.5: YMAX of cube
+	height = cmds.intSliderGrp(trunk_height, query=True, value=True)+0.5
+			
+	# get tree and trunk group name
+	tree  = make_tree_layer(cmds.intSliderGrp(tree_layer, query=True, value=True), height)
+	trunk = make_trunk(cmds.intSliderGrp(trunk_height, query=True, value=True))	
+	
+	# group tree layer and trunk
+	cmds.group(em=True, n='Tree_main')
+	cmds.parent(tree, trunk, 'Tree_main')
+	
+
 # default cube : height, width, depth = (1, 1, 1)
 def make_trunk(trunk_layer):
 
@@ -114,42 +157,5 @@ def make_tree_layer(query_tree_layer, trunk_height):
 
 	return tree_Grp
 
-
-def create_tree(tree_layer, trunk_height, *args):
-
-	#check to see if model exists
-	if cmds.objExists('Tree_main'):
-	    cmds.delete('Tree_main')
-			
-	# 0.5: YMAX of cube
-	height = cmds.intSliderGrp(trunk_height, query=True, value=True)+0.5
-			
-	# get tree and trunk group name
-	trunk = make_trunk(cmds.intSliderGrp(trunk_height, query=True, value=True))
-	tree  = make_tree_layer(cmds.intSliderGrp(tree_layer, query=True, value=True), height)
-		
-	# group tree layer and trunk
-	cmds.group(em=True, n='Tree_main')
-	cmds.parent(tree, trunk, 'Tree_main')
-
-
-# create window
-create_tree_window = cmds.window('Create Tree', widthHeight=(400, 160))
-			
-# deesign title / button position
-cmds.columnLayout(adjustableColumn=True)
-cmds.separator(height=20, width=100)
-cmds.text('Create Tree')
-cmds.separator(height=20, width=100)
 	
-# set tree_layer slider 
-tree_layer = cmds.intSliderGrp(field=True, label='Tree layer  ', minValue=1, maxValue=10, value=3)
-	
-# set trunk_height slider 
-trunk_height = cmds.intSliderGrp(field=True, label='Trunk height  ', minValue=1, maxValue=10, value=7)
-	
-# set create_tree button and connect create_tree()
-cmds.button(label='Create Tree', command=partial(create_tree, tree_layer, trunk_height))
-							 
-# display window
-cmds.showWindow(create_tree_window)
+UI()
