@@ -1,9 +1,8 @@
 with open('D:/Documents/work/TWR/TD class/homework/goal/log_data.csv', 'r') as read_obj:
 	data_dict = {}
 	for line in read_obj.readlines():
-		name = line.split('\n')[0].split(',')[1]
-		date = line.split('\n')[0].split(',')[0].split(' ')[0]
-		time = line.split('\n')[0].split(',')[0].split(' ')[1]
+		log_info, name = line.split('\n')[0].split(',')
+		date, time = log_info.split(' ')
 
 		if data_dict.get(name) == None:
 			data_dict[name] = {}
