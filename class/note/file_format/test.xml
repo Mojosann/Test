@@ -1,0 +1,10 @@
+<xml>
+	<project fps="25" height="1080" name="P1" width="1920" />
+		<sequence name="sq0010" />
+		<sequence name="sq0020" />
+		<sequence name="sq0040" />
+	<project fps="24" height="1152" name="P2" width="2048" />
+		<sequence name="sq0010" />
+		<sequence name="sq0050" />
+		<sequence name="sq0090" />
+</xml>

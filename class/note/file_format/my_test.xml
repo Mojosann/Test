@@ -1,0 +1,8 @@
+<proj_info>
+	<Apocalypse_Now>
+		<info fps="25" height="920" maya_version="2021" renderer="v-ray" width="1280"/>
+	</Apocalypse_Now>
+	<Dune>
+		<info fps="50" height="720" maya_version="2020" renderer="mantra" width="1080"/>
+	</Dune>
+</proj_info>
