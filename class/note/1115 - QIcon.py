@@ -18,3 +18,16 @@ button.setIcon(icon)
 layout.setPixmap(pixmap)
 layout.addWidget(label)
 layout.addWidget(button)
+
+
+# [解決houdini中無法show出icon的問題]
+from PySide2 import QtWidgets, QtGui, QtCore
+import hou
+
+main_win = hou.ui.mainQtWindow()
+# 因為button還沒被實體化所以setParent到main window
+button = QtWidgets.QPushButton('click')
+stand_icon = main_win.style().standardIcon(QtWidgets.QStyle.SP_DialogOpenButton)
+button.setIcon(stand_icon)
+button.setIconSize(QtCore.QSize(16, 16))
+button.show()

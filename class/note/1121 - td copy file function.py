@@ -9,9 +9,18 @@ import os, sys, shutil
 def td_copy_file(source_file, target_file):
 
 	if os.path.isfile(source_file) != True:
-		print('file not exist!')
+		return 'file not exist!'
 	
-	if os.path.isfile(target_file) == True:
+	# check target path exist
+	target_path = os.path.dirname(target_file)
+	if os.path.isdir(target_path) != True:
+		os.mkdir(target_path)
+
+	if os.path.isfile(target_file) != True:
+		shutil.copyfile(source_file, target_file)
+		return 'back up complete!'
+
+	else:		
 		old_path = os.path.dirname(target_file) + '/old'
 		file_name = os.path.basename(target_file)
 		backup_file = '%s/%s' % (old_path, file_name)
@@ -21,23 +30,25 @@ def td_copy_file(source_file, target_file):
 			shutil.copyfile(source_file, backup_file)
 			return 'back up %s complete!' % backup_file
 
-		if os.path.isdir(old_path) == True:
+		else:
 			name, ext = os.path.splitext(file_name)
-			backup_len = len(os.listdir(old_path))
+			# avoid count other file in folder
+			name_list = []
+			for item in os.listdir(old_path):
+				if name in item:
+					name_list.append(item)
+
+			backup_len = len(name_list)
 			backup_file_index = '%s/%s(%s)%s' % (old_path, name, backup_len, ext)
 			
 			if os.path.isfile(backup_file) == True:
-				if backup_len == 1:
 					shutil.copyfile(source_file, backup_file_index)
-					return 'back up %s complete!' % backup_file_index
-				if backup_len > 1:
-					shutil.copyfile(source_file, backup_file_index)
-					return 'back up %s complete!' % backup_file_index
+					return 'back up %s(%s)%s complete!' % (name, backup_len, ext)
 
-	else:
-		shutil.copyfile(source_file, target_file)
-		return 'back up complete!'
+# source = 'D:/Documents/work/TWR/TD class/homework/hw008_thumbnail/Bubbles.png'
+# target = 'D:/temp/file/Bubbles.png'
+# print(td_copy_file(source, target))
 
-source = 'D:/Documents/work/TWR/TD class/homework/hw008_thumbnail/Bubbles.png'
-target = 'D:/temp/file/Bubbles.png'
-print(td_copy_file(source, target))
+if __name__ == '__main__':
+	print(td_copy_file(sys.argv[1], sys.argv[2]))
+	sys.exit()
