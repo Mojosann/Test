@@ -11,6 +11,7 @@ def button_command(check_box_list, text):
         
         if item.isChecked():
             text.append(item.text())
+    text.append('------------------------')
 
 def all_button(all, check_box_list):
 

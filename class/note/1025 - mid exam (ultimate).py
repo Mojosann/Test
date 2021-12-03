@@ -154,7 +154,7 @@ def sh_combo_command(sq_combo, sh_combo, char_list, prop_list, set_list, task, s
 			shot_grp[4].setText(str(my_dict[sequence][shot]['height']))
 
 			
-def main():
+def UI():
 	main_window = main_window_maya.get_main_window()
 
 	window = QWidget()
