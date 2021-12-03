@@ -1,0 +1,37 @@
+[
+  {
+    "description": "The self-proclaimed leader of the Powerpuff Girls.",
+    "name": "Blossom",
+    "type": "Chemical X",
+    "update_time":"March 25, 2005",
+    "thumbnail":"D:/Documents/work/TWR/TD class/homework/hw008_thumbnail/blossom.png"
+  },
+  {
+    "description": "The 'softest and sweetest' of the three.",
+    "name": "Bubbles",
+    "type": "Chemical X",
+    "update_time":"March 25, 2005",
+    "thumbnail":"D:/Documents/work/TWR/TD class/homework/hw008_thumbnail/Bubbles.png"
+  },
+  {
+    "description": "Is described as a 'tough hotheaded tomboy'.",
+    "name": "Buttercup",
+    "type": "Chemical X",
+    "update_time":"March 25, 2005",
+    "thumbnail":"D:/Documents/work/TWR/TD class/homework/hw008_thumbnail/Buttercup.png"
+  },
+  {
+    "description": "A scientist living on the outskirts of a small town.",
+    "name": "Professor Utonium",
+    "type": "human",
+    "update_time":"March 25, 2005",
+    "thumbnail":"D:/Documents/work/TWR/TD class/homework/hw008_thumbnail/Professor.png"
+  },
+  {
+    "description": "who served as an assistant by Professor You.",
+    "name": "Mojo Jojo",
+    "type": "animal",
+    "update_time":"March 25, 2005",
+    "thumbnail":"D:/Documents/work/TWR/TD class/homework/hw008_thumbnail/Mojo Jojo.png"
+  }
+]

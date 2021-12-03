@@ -1,0 +1,252 @@
+[
+  {
+    "enable": "False",
+    "name": "mini_01",
+    "type": "animation"
+  },
+  {
+    "enable": "False",
+    "name": "mini_02",
+    "type": "animation"
+  },
+  {
+    "enable": "False",
+    "name": "mini_03",
+    "type": "animation"
+  },
+  {
+    "enable": "True",
+    "name": "mini_04",
+    "type": "animation"
+  },
+  {
+    "enable": "False",
+    "name": "mini_05",
+    "type": "fx"
+  },
+  {
+    "enable": "False",
+    "name": "mini_06",
+    "type": "fx"
+  },
+  {
+    "enable": "False",
+    "name": "mini_07",
+    "type": "animation"
+  },
+  {
+    "enable": "True",
+    "name": "mini_08",
+    "type": "fx"
+  },
+  {
+    "enable": "True",
+    "name": "mini_09",
+    "type": "animation"
+  },
+  {
+    "enable": "False",
+    "name": "mini_10",
+    "type": "animation"
+  },
+  {
+    "enable": "True",
+    "name": "mini_11",
+    "type": "fx"
+  },
+  {
+    "enable": "False",
+    "name": "mini_12",
+    "type": "animation"
+  },
+  {
+    "enable": "False",
+    "name": "mini_13",
+    "type": "animation"
+  },
+  {
+    "enable": "False",
+    "name": "mini_14",
+    "type": "animation"
+  },
+  {
+    "enable": "False",
+    "name": "mini_15",
+    "type": "animation"
+  },
+  {
+    "enable": "True",
+    "name": "mini_16",
+    "type": "fx"
+  },
+  {
+    "enable": "True",
+    "name": "mini_17",
+    "type": "fx"
+  },
+  {
+    "enable": "True",
+    "name": "mini_18",
+    "type": "fx"
+  },
+  {
+    "enable": "False",
+    "name": "mini_19",
+    "type": "fx"
+  },
+  {
+    "enable": "False",
+    "name": "mini_20",
+    "type": "animation"
+  },
+  {
+    "enable": "True",
+    "name": "mini_21",
+    "type": "fx"
+  },
+  {
+    "enable": "False",
+    "name": "mini_22",
+    "type": "animation"
+  },
+  {
+    "enable": "True",
+    "name": "mini_23",
+    "type": "fx"
+  },
+  {
+    "enable": "False",
+    "name": "mini_24",
+    "type": "fx"
+  },
+  {
+    "enable": "True",
+    "name": "mini_25",
+    "type": "fx"
+  },
+  {
+    "enable": "True",
+    "name": "mini_26",
+    "type": "animation"
+  },
+  {
+    "enable": "True",
+    "name": "mini_27",
+    "type": "animation"
+  },
+  {
+    "enable": "True",
+    "name": "mini_28",
+    "type": "fx"
+  },
+  {
+    "enable": "False",
+    "name": "mini_29",
+    "type": "fx"
+  },
+  {
+    "enable": "True",
+    "name": "mini_30",
+    "type": "animation"
+  },
+  {
+    "enable": "False",
+    "name": "mini_31",
+    "type": "fx"
+  },
+  {
+    "enable": "True",
+    "name": "mini_32",
+    "type": "fx"
+  },
+  {
+    "enable": "True",
+    "name": "mini_33",
+    "type": "fx"
+  },
+  {
+    "enable": "True",
+    "name": "mini_34",
+    "type": "animation"
+  },
+  {
+    "enable": "True",
+    "name": "mini_35",
+    "type": "animation"
+  },
+  {
+    "enable": "True",
+    "name": "mini_36",
+    "type": "fx"
+  },
+  {
+    "enable": "False",
+    "name": "mini_37",
+    "type": "animation"
+  },
+  {
+    "enable": "True",
+    "name": "mini_38",
+    "type": "fx"
+  },
+  {
+    "enable": "True",
+    "name": "mini_39",
+    "type": "fx"
+  },
+  {
+    "enable": "True",
+    "name": "mini_40",
+    "type": "animation"
+  },
+  {
+    "enable": "False",
+    "name": "mini_41",
+    "type": "animation"
+  },
+  {
+    "enable": "True",
+    "name": "mini_42",
+    "type": "fx"
+  },
+  {
+    "enable": "False",
+    "name": "mini_43",
+    "type": "animation"
+  },
+  {
+    "enable": "False",
+    "name": "mini_44",
+    "type": "animation"
+  },
+  {
+    "enable": "True",
+    "name": "mini_45",
+    "type": "fx"
+  },
+  {
+    "enable": "True",
+    "name": "mini_46",
+    "type": "animation"
+  },
+  {
+    "enable": "True",
+    "name": "mini_47",
+    "type": "fx"
+  },
+  {
+    "enable": "True",
+    "name": "mini_48",
+    "type": "fx"
+  },
+  {
+    "enable": "False",
+    "name": "mini_49",
+    "type": "fx"
+  },
+  {
+    "enable": "True",
+    "name": "mini_50",
+    "type": "animation"
+  }
+]
