@@ -31,3 +31,7 @@ stand_icon = main_win.style().standardIcon(QtWidgets.QStyle.SP_DialogOpenButton)
 button.setIcon(stand_icon)
 button.setIconSize(QtCore.QSize(16, 16))
 button.show()
+
+# 0223 - 當script不限於在houdini內使用的時候
+# icon可以直接parent window
+# 然後window再去parent別的main window (由其他module去加入main_window的fiunction)
