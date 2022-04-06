@@ -1,0 +1,46 @@
+QLabel {
+	color: white;	
+	font-size: 15px;	
+	font-weight: bold;	
+	font-family: Microsoft JhengHei;
+}
+
+QCheckBox {
+	color: white;	
+	font-size: 15px;	
+	font-weight: bold;	
+	font-family: Microsoft JhengHei;
+}
+		
+QGroupBox {
+	color: yellow;
+	font-size: 13px;	
+	font-weight: bold;	
+	font-family: Microsoft JhengHei;
+}
+
+QLineEdit {
+	color: white; 
+	font-size: 15px;	
+	font-weight: bold;	
+	font-family: Microsoft JhengHei;
+	padding: 4px;
+}
+
+QComboBox {
+	color: white; 
+	font-size: 15px; 
+	font-weight: bold;
+	font-family: Microsoft JhengHei;
+	padding: 4px;
+}
+
+QPushButton {
+	color: white;	
+	font-size: 15px;	
+	font-weight: bold;	
+	font-family: Microsoft JhengHei;
+/*	border-radius: 100px; 
+	border: 2px solid black;
+	border-style: outset;*/
+}
