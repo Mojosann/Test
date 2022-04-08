@@ -1,4 +1,4 @@
-import os, sys, json, subprocess
+import os, sys, json, subprocess, time
 from pprint import pprint
 
 class ThirdPartyTestCore(object):
@@ -39,7 +39,7 @@ class ThirdPartyTestCore(object):
 					fps = int(item['r_frame_rate'].split('/')[0])
 		return fps
 
-	def convert_to_image_file(self, third_party, source_file, output_file, fps=None):
+	def convert_to_image_file(self, third_party, source_file, output_file, fps=None, start_frame=None):
 		
 		##### get convert data
 		convert_info_list = []
@@ -53,6 +53,10 @@ class ThirdPartyTestCore(object):
 		if fps:
 			convert_info_list.append('fps=%s' % fps)
 		
+		if start_frame:
+			convert_info_list.append('-start_number')
+			convert_info_list.append('%s' % start_frame)
+
 		##### convert to jpg and keep quality
 		if os.path.basename(output_file).split('.')[1] == 'jpg':
 			# convert_info_list.append('-qscale:v 2')   ##### 500 KB

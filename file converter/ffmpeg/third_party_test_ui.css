@@ -5,6 +5,11 @@ QLabel {
 	font-family: Microsoft JhengHei;
 }
 
+QProgressBar {
+	padding: 2px;
+	font-family: Microsoft JhengHei;
+}
+
 QCheckBox {
 	color: white;	
 	font-size: 15px;	
@@ -40,7 +45,4 @@ QPushButton {
 	font-size: 15px;	
 	font-weight: bold;	
 	font-family: Microsoft JhengHei;
-/*	border-radius: 100px; 
-	border: 2px solid black;
-	border-style: outset;*/
 }
